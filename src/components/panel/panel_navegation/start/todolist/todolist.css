@@ -1,0 +1,28 @@
+.todolist{
+    margin-bottom: 20px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.todolist .todolist-items h5{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.todolist .todolist-items h5 p{
+    margin-left: 10px;
+}
+.todolist .todolist-items h5 span{
+    margin-top: 5px;
+}
+.todolist .todolist-items h5 #completeItem{
+  display: none;
+}
+@media(max-width: 575px){
+  .todolist{
+    width: 80%;
+  }
+}

@@ -1,0 +1,22 @@
+form{
+  width: 50%;
+}
+form .form-item{
+  display: flex;
+  justify-content: space-around;
+}
+
+form .form-item{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+form .form-item .form-control{
+  width: 50%;
+}
+
+@media(max-width: 575px){
+  form{
+    width: 80%;
+  }
+}

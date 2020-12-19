@@ -1,0 +1,31 @@
+.content-panel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-panel .content-panel-title{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  height: 130px;
+}
+
+.content-panel .content-panel-title h3{
+  font-size: 20px;
+  margin-top: 10px;
+}
+.content-panel hr{
+  width: 50%;
+  background-color: black;
+  margin-top: 10px;
+}
+
+@media(max-width: 575px){
+  .content-panel hr{
+    width: 80%;
+  }
+      
+}
