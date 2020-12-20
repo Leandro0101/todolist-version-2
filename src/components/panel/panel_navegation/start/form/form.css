@@ -15,6 +15,25 @@ form .form-item .form-control{
   width: 50%;
 }
 
+form .form-item button{
+  background-color: #FFBC7E;
+  border: none;
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  box-shadow: 1px 0px 1px 0px #A86F48;
+  transition: all 0.3s;
+}
+
+form .form-item button:hover{
+  cursor: pointer;
+  background-color: #F3A168;
+}
+
+form .form-item button:focus{
+  outline: none;
+}
+
 @media(max-width: 575px){
   form{
     width: 80%;

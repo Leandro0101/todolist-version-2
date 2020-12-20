@@ -12,6 +12,8 @@ const TodoList = () => {
         <h5><span><GrCheckbox /></span><p>Todolist</p></h5>
         <h5><span><GrCheckbox /></span><p>Levar comida para o cachorro</p></h5>
         <h5><span><GrCheckbox /></span><p>Todolist</p></h5>
+        <h5><span><GrCheckbox /></span><p>Levar comida para o cachorro</p></h5>
+        <h5><span><GrCheckbox /></span><p>Todolist</p></h5>
         <h5>
           <span id='incompleteItem' onClick={() => changeCheckBox('incompleteItem', 'completeItem')}>
             <GrCheckbox />
