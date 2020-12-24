@@ -1,6 +1,6 @@
 export function showElement (elementId){
   const element = document.querySelector(`#${elementId}`)
-  element.style.display = 'block'
+  element.style.display = 'flex'
 }
 
 export function hiddeElement(elementId){

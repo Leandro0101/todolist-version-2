@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react'
 import './header.css'
-import image5 from '../../images/image5.jpeg'
+import appFirebase from '../../services/firebase'
+import { showElement } from '../../utils/'
 const Header = () => {
-    return (
-        <div className="header">
-            <p>Leandro Lima</p>
-            <img src={image5} />
-        </div>
-    )
+  const [user, setUser] = useState({ displayName: '', photoURL: '' })
+
+  useEffect(() => {
+    appFirebase.auth().onAuthStateChanged(data => {
+      if (data != null) {
+        setUser(data)
+        showElement('userPhoto')
+      }
+    })
+  })
+
+  return (
+    <div className="header" id='headerr'>
+      <p>{user.displayName}</p>
+      <img id='userPhoto' src={user.photoURL} alt='' />
+    </div>
+  )
 }
 
-export default Header;
+export default Header

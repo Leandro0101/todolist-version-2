@@ -1,9 +1,11 @@
+import React from 'react'
 import './main.css'
 import Panel from '../../components/panel/panel'
-const Main = () => {
+
+const Main = (props) => {
   return (
     <div className='main'>
-      <Panel />
+        <props.component />
     </div>
   )
 }

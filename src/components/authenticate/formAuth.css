@@ -1,0 +1,32 @@
+.form-auth Form{
+  width: 100%;
+}
+.form-auth{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #000;
+  margin-bottom: 300px;
+}
+
+.form-auth .btn-group{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-auth .otherAcess{
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-auth .otherAcess img {
+  margin-top: 10px;
+}
+
+.form-auth .otherAcess img:hover{
+  cursor: pointer;
+}
