@@ -1,6 +1,5 @@
 import React, { createContext, useState, useEffect } from 'react'
-import appFirebase, { auth } from '../services/firebase'
-import history from '../history'
+import appFirebase from '../services/firebase/authentication'
 export const AuthContext = createContext()
 export const AuthProvider = (props) => {
   const { children } = props

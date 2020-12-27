@@ -1,6 +1,5 @@
 import firebase from 'firebase'
 import firebaseConfig from '../../config/firebase'
-import history from '../../history'
 const appFirebase = firebase.initializeApp(firebaseConfig)
 export async function auth() {
   try {
@@ -26,7 +25,6 @@ export async function createUserWithEmailAndPassword(email, password) {
     console.log(error)
   }
 }
-
 
 export function user() {
   return appFirebase.auth().currentUser

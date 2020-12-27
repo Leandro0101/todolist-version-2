@@ -1,15 +1,21 @@
 import React from 'react'
 import FormAuth from '../formAuth'
-import { auth } from '../../../services/firebase'
+import { auth, signInWithEmailAndPassword } from '../../../services/firebase/authentication'
 import history from '../../../history'
 const Login = () => {
 
-  const onSubmit = async() => {
+  const signInWithGoogle = async () => {
     await auth()
-    history.push('/panel')
+    history.push('/')
+  }
+
+
+  const signInWithEmailAPassword = async (values) => {
+    await signInWithEmailAndPassword(values.email, values.password)
+    history.push('/')
   }
   return (
-    <FormAuth onSubmit={onSubmit} />
+    <FormAuth signInWithGoogle={signInWithGoogle} onSubmit={signInWithEmailAPassword} />
   )
 }
 

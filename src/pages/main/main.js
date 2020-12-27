@@ -1,6 +1,5 @@
 import React from 'react'
 import './main.css'
-import Panel from '../../components/panel/panel'
 
 const Main = (props) => {
   return (

@@ -9,7 +9,7 @@ import './panel.css'
 const Panel = (props) => {
 
   useEffect(() => {
-    showElement('headerr')
+    showElement('header')
   })
 
   const PanelContent = () => {

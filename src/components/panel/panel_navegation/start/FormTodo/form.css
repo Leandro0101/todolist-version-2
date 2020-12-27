@@ -1,21 +1,21 @@
-form{
+.formTodo{
   width: 50%;
 }
-form .form-item{
+.formTodo .form-item{
   display: flex;
   justify-content: space-around;
 }
 
-form .form-item{
+.formTodo .form-item{
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
-form .form-item .form-control{
+.formTodo .form-item .form-control{
   width: 50%;
 }
 
-form .form-item button{
+.formTodo .form-item button{
   background-color: #FFBC7E;
   border: none;
   width: 100%;
@@ -25,12 +25,12 @@ form .form-item button{
   transition: all 0.3s;
 }
 
-form .form-item button:hover{
+.formTodo .form-item button:hover{
   cursor: pointer;
   background-color: #F3A168;
 }
 
-form .form-item button:focus{
+.formTodo .form-item button:focus{
   outline: none;
 }
 

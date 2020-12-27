@@ -1,11 +1,11 @@
 import React from 'react'
 import Panel from '../../panel'
-import appFirebase from '../../../../services/firebase'
+import appFirebase from '../../../../services/firebase/authentication'
 import history from '../../../../history'
 import { hiddeElement } from '../../../../utils'
 const User = () => {
   const onSubmit = () => {
-    hiddeElement('headerr')
+    hiddeElement('header')
     appFirebase.auth().signOut()
     history.push('/login')
   }
